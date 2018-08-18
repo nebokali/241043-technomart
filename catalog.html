@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Техномарт</title>
+    <title>Каталог Техномарта</title>
   </head>
   <body>
   	<header class="main-header">
@@ -10,16 +10,21 @@
         <a class="main-header-logo">
           <img src="#" alt="Логотип Техномарта">
         </a>
-        <a class="search" href="#">Поиск</a>
+        <form class="search-form" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input type="search" name="search" id="search" placeholder="Поиск:">
+        </form>
         <a class="bookmark" href="#">Закладки: 0</a>
         <a class="cart" href="#">Корзина: 0</a>
-        <a class="make-order" href="#">Оформить заказ</a>
+        <button class="make-order">Оформить заказ</button>
       </div> 
       <div class="bottom-menu">
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <a href="tel:+78125550555" class="main-header-phone">+7(812)555-05-55</a>
         <p class="main-header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <div class="user-navigation">
+          <a class="user-name" href="#">Равшан Джамшутович</a>
+          <button class="logout">Выйти</button>
           <a class="order-link" href="#">Мои заказы</a> 
           <a class="profile-link" href="#">Личный кабинет</a>
         </div>
@@ -48,25 +53,63 @@
       <h2 class="catalog-current-page">Перфораторы</h2>
       <section class="filters">
         <h3>Фильтр:</h3>
-        <div class="price-filter">
-          <span>Цена:</span>
-        </div>
-        <div class="brand-filter">
-          <ul>
-            <li><a href="#">Bosch</a></li>
-            <li><a href="#">Интерскол</a></li>
-            <li><a href="#">Makita</a></li>
-            <li><a href="#">DeWALT</a></li>
-            <li><a href="#">Hitachi</a></li>
-          </ul>
-        </div>
-        <div class="type-filter">
-          <ul>
-            <li>Аккумуляторные</li>
-            <li>Сетевые</li>
-          </ul>
-        </div>
-        <a class="show-button" href="#"></a>
+        <form class="filter" method="get" action="#">
+          <fieldset class="price-filter">
+              <legend>Цена:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                  <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+                </div>
+              </div>  
+          </fieldset>
+          <fieldset class="brand-filter">
+            <legend>Производители</legend>
+            <ul>
+              <li>
+                <input class="filter-input-checkbox" type="checkbox" name="bosch-id" id="filter-bosch-id" checked>
+                <label for="filter-bosch-id"><span>Bosch</span></label>
+              </li>
+              <li>
+                <input class="filter-input-checkbox" type="checkbox" name="interskol-id" id="filter-interskol-id">
+                <label for="filter-interskol-id"><span>Интерскол</span></label>
+              </li>
+              <li>
+                <input class="filter-input-checkbox" type="checkbox" name="makita-id" id="filter-makita-id" checked>
+                <label for="filter-makita-id"><span>Makita</span></label>
+              </li>
+              <li>
+                <input class="filter-input-checkbox" type="checkbox" name="dewalt-id" id="filter-dewalt-id">
+                <label for="filter-dewalt-id"><span>DeWALT</span></label>
+              </li>
+              <li>
+                <input class="filter-input-checkbox" type="checkbox" name="hitachi-id" id="filter-hitachi-id">
+                <label for="filter-hitachi-id"><span>Hitachi</span></label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="type-filter">
+            <legend>Питание</legend>
+            <ul>
+              <li>
+                <input class="filter-input-radio" type="radio" name="grid" value="accumulator" id="filter-accumulator" checked>
+                <label for="filter-accumulator"><span>Аккумуляторные</span></label>
+              </li>
+              <li>
+                <input class="filter-input-radio" type="radio" name="grid" value="network" id="filter-network">
+                <label for="filter-network"><span>Сетевые</span></label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
       <section class="sort">
         <div class="sort-list">
@@ -197,5 +240,13 @@
         <p class="developer">Разработано — htmlacademy.ru</p>
       </div>
     </footer>
+    <section class="modal modal-cart">
+      <h2 class="visually-hidden">Оповещение: товар добавлен в корзину</h2>
+      <p><img src="img/modal-cart.png" alt="Успешно">
+      Товар добавлен в корзину!</p>
+      <a href="#">Оформить заказ</a>
+      <a href="#">Продолжить покупки</a>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
