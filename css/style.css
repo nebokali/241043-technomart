@@ -1,0 +1,439 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #f3f7f8;
+}
+
+.top-menu {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.top-menu a {
+  color: #ffffff;
+}
+
+.main-header-logo {
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.make-order {
+  background-color: #63a63e;
+  color: white;
+}
+
+.bottom-menu h1 {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  font-weight: 400;
+  color: #ee3643;
+}
+
+.main-header-phone {
+  font-size: 21px;
+  font-weight: 700;
+  color: #ee3643;
+}
+
+.main-header-adress {
+  font-size: 14px;
+  color: #3f4e66;
+  font-weight: 700;
+}
+
+.user-navigation a {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+}
+
+.main-navigation {
+  background-color: #32425c;
+}
+
+.site-navigation li a{
+  font-size: 17px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.item {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.item h3 {
+  line-height: 26px;
+}
+
+.item a {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  background: rgba(0,0,0,0.2);
+}
+
+.materials {
+  background-color: #ffbf47;
+}
+
+.instrument {
+  background-color: #3bbce3;
+}
+
+.tech {
+  background-color: #dc91d8;
+}
+
+.sale {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
+.slider-items li{
+  background-image: url("../img/slider_2.jpg");
+  background-repeat: no-repeat;
+}
+
+.slider-items li:first-child {
+  background-image: url("../img/slider_1.jpg");
+  background-repeat: no-repeat;
+}
+
+.slider-items li h3{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.slider-items li p{
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ee3643;
+}
+
+.section-top {
+  background-color: #f9f5f0;
+}
+
+.section-top h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #677283;
+}
+
+.popular ul li{
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.popular ul li h3{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: black;
+}
+
+.actual-price{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: white;
+  background-color: #ee3643;
+}
+
+.past-price{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #aaaaaa;
+  text-decoration:line-through;
+}
+
+.item-buttons {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.buy {
+  color: white;
+  background-color: #63a63e;
+}
+
+.bookmark-btn {
+  color: #32425c;
+  background-color: white;
+  border: 2px solid #63a63e;
+}
+
+.services {	
+  color: black;
+  background-color: #f4f8fa;
+}
+
+.services h2{
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.services p{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.slider-options a{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+  color: white;
+  background-color: #32425c;
+}
+
+.slider-content h3 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.slider-content p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;	
+}
+
+.about h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.about p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.transport-list {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.main-footer {
+  color: white;
+  background-color: #32425c;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.main-footer-logo {
+  font-size: 30px;
+  color: white;
+  line-height: 30px;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.main-footer-navigation a{
+  color: white;
+}
+
+.extra-footer-navigation a {
+  color: #ffda96;
+}
+
+.copyright {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  background-color: #293449;
+}
+
+.copyright a{
+  color: #ffda96;
+}
+
+.feedback-form {
+ background-color: #f4f4f4;
+}
+
+.login-form,
+.letter-form {
+  background-color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ee3643;	 
+}
+
+.user-navigation .order-link,
+.user-navigation .profile-link{
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+  background-color: inherit;
+}
+
+.catalog-navigation a{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.catalog-current-page {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #677283;
+  background-color: #f2f6f8;
+}
+
+.filters h3 {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+
+.price-controls label input{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  background-color: #f7f3ec;
+}
+
+.price-filter legend,
+.brand-filter legend,
+.type-filter legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.brand-filter label,
+.type-filter label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  color: black;
+  background-color: white;
+}
+
+.sort-list {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+
+.sort-list h3{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.sort-list a {
+  color: #acaaa5;
+  border-bottom: 1px dotted #ee3643; 
+}
+
+.pages a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: black;
+  border: 1px solid #e5e5e5; 
+}
+
+.about-type {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+  background-color: #f2f6f8;
+}
+
+.about-type h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.modal-cart {
+  background-color: #f1f1f1;
+}
+
+.modal-cart p {
+  background-color: white;
+  font-size: 30px;
+  color: black;
+}
+
+.modal-cart a {
+	text-transform: uppercase;
+	font-size: 14px;
+	background-color: white;
+	color: black;
+	font-weight: 700;
+}
