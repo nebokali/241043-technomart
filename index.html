@@ -61,7 +61,7 @@
       <div class="container">
         <section class="features">
           <h2 class="visually-hidden">Услуги и условия</h2>
-          <div class="item materials">
+          <div class="item materials new">
             <h3>Материалы</h3>
             <a href="#">На любой вкус</a>
           </div>
@@ -74,20 +74,32 @@
             <a href="#">Для стройки</a>
           </div>
           <div class="slider">
-            <ul class="slider-items">
-              <li>
-                <h3>Дрели</h3>
-                <p>Соседям в радость!</p>
-                <a class="link" href="#">Открыть каталог</a>
-              </li>
-              <li class="visually-hidden">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a class="link" href="#">Открыть каталог</a>
-              </li>
-            </ul>
-            <button class="button slider-back visually-hidden" type="button">Назад</button>
-            <button class="button slider-next visually-hidden" type="button">Вперед</button>
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+            </div>
+            <div class="slider-arrows">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+            </div>
+            <div class="slides-list">
+              <div class="slide slide1">
+                <div class="slide-content">
+                  <h3>Дрели</h3>
+                  <p>Соседям в радость!</p>
+                  <a class="link" href="#">Открыть каталог</a>
+                </div>
+              </div>
+              <div class="slide slide2">
+                <div class="slide-content">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a class="link" href="#">Открыть каталог</a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="side-items">
             <div class="item sale">
@@ -113,7 +125,7 @@
               <h3>Перфоратор BOSCH BFG 9000</h3>
               <span class="past-price">32500 Р.</span>
               <span class="actual-price">25500 Р.</span>
-              <div class="item-buttons visually-hidden">
+              <div class="item-buttons">
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark-btn" href="#">В закладки</a>
               </div>
@@ -125,7 +137,7 @@
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <span class="past-price">22500 Р.</span>
               <span class="actual-price">15500 Р.</span>
-              <div class="item-buttons visually-hidden">
+              <div class="item-buttons">
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark-btn" href="#">В закладки</a>
               </div>
@@ -137,18 +149,18 @@
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <span class="past-price">30500 Р.</span>
               <span class="actual-price">25500 Р.</span>
-              <div class="item-buttons visually-hidden">
+              <div class="item-buttons">
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark-btn" href="#">В закладки</a>
               </div>
             </li>   
-            <li class="new-drill">
+            <li class="new-drill new">
               <div class="item-img">
               <img src="img/catalog-item-1.jpg" alt="Фото перфоратора">
               </div>
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <span class="actual-price">12500 Р.</span>
-              <div class="item-buttons visually-hidden">
+              <div class="item-buttons">
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark-btn" href="#">В закладки</a>
               </div>
@@ -194,27 +206,34 @@
           <h2>Сервисы</h2>
             <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="slider-services">          
+            <input type="radio" id="slider-content-1" name="switch" checked>
+            <input type="radio" id="slider-content-2" name="switch">
+            <input type="radio" id="slider-content-3" name="switch">
             <ul class="slider-options">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Кредит</a></li>
+              <li><label for="slider-content-1">Доставка</label></li>
+              <li><label for="slider-content-2">Гарантия</label></li>
+              <li><label for="slider-content-3">Кредит</label></li>
             </ul>         
             <div class="slider-content">
-              <ul>
-                <li>
+              <div class="slider-content-list">
+                <div class="slider-content-item slider-content-1">
                   <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-                </li>
-                <li class="visually-hidden">
+                </div>
+              </div>
+              <div class="slider-content-list">
+                <div class="slider-content-item slider-content-2">
                   <h3>Гарантия</h3>
                   <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь   сами.</p>
-                </li>
-                <li class="visually-hidden">
+                </div>
+              </div>
+              <div class="slider-content-list">
+                <div class="slider-content-item slider-content-3">
                   <h3>Кредит</h3>
                   <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
                   <a class="link credit" href="#">Отправить заявку</a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>  
