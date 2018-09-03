@@ -2152,17 +2152,180 @@ input[type="radio"]:disabled + label {
 }
 
 .modal {
+  position: fixed;
+  color: #000000;
+  background-color: white;
+  -webkit-box-shadow: -2px 1px 26px 3px rgba(0,0,0,0.75);
+  box-shadow: -2px 1px 26px 3px rgba(0,0,0,0.75);
   display: none;
+  z-index: 1000;
+}
+
+.modal-feedback {
+  top: 327px;
+  width: 620px;
+  height: 430px;
+  margin-left: 325px;
+}
+
+.feedback-top {
+  width: 620px;
+  height: 7px;
+  background-color: #ff5357;
+  margin-bottom: 47px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-form div,
+.letter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form,
+.letter-form {
+  margin-left: 80px;
+}
+
+.login-form div {
+  margin-right: 20px;
+}
+
+.login-form div label,
+.letter-form label {
+  margin-bottom: 11px;
+}
+
+.login-form div input {
+  width: 188px;  
+  font-size: 13px;
+  line-height: 18px;
+  padding: 7px 13px 9px;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #a9a9a9;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 22px;   
+}
+
+.letter-form textarea {
+  width: 440px;
+  height: 105px;
+  font-size: 13px;
+  line-height: 28px;
+  padding-left: 12px;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #a9a9a9;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  outline: none;
+}
+
+.login-form div input:hover,
+.letter-form textarea:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.login-form div input:active,
+.letter-form textarea:active {
+  border: 2px solid #ee3643;
+}
+
+.submit-form {
+  background-color: #f1f1f1;
+  height: 112px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-form input {
+  padding: 12px 198px 10px;
+  margin-top: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 25px;
+  height: 4px;
+  background-color: red;
+}
+
+.modal-close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal-map {
+  top: 327px;
+  width: 940px;
+  height: 446px;
+  margin-left: 163px;
+  background: url(../img/full_map.png);
+  box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
 
 .modal-cart {
-  background-color: #f1f1f1;
+  background-color: white;
+  top: 411px;
+  width: 620px;
+  margin-left: 325px;
 }
 
 .modal-cart h2 {
   background-color: white;
   font-size: 30px;
   color: black;
+  margin-left: 80px;
+  margin-right: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.modal-cart-buttons {
+  background-color: #f1f1f1;
+  height: 112px;
+  margin-top: 35px;
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .modal-cart a {
@@ -2172,3 +2335,22 @@ input[type="radio"]:disabled + label {
 	color: black;
 	font-weight: 700;
 }
+
+.modal-cart-buttons a {
+  padding-left: 59px;
+  padding-right: 62px;
+}
+
+.modal-cart-buttons .btn-order {
+  margin-right: 20px;
+  background-color: #ee3643;
+  color: white;
+}
+
+.modal-cart-buttons .btn-continue {
+  padding-right: 47px;
+  padding-left: 45px;
+}
+    
+
+    

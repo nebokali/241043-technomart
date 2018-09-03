@@ -305,9 +305,10 @@
       </div>
     </footer>
     <section class="modal modal-feedback">
+      <div class="feedback-top"></div>
       <div class="feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="feedback-form-modal" action="https://echo.htmlacademy.ru" method="post">
           <div class="login-form">
             <div>
               <label for="feedback-login">Ваше имя:</label>
@@ -322,14 +323,15 @@
             <label for="feedback-letter">Текст письма:</label>
             <textarea class="feedback-letter-field" id="feedback-letter" placeholder="В свободной форме"></textarea>
           </div>
-          <input class="button" type="submit" value="Отправить">
+          <div class="submit-form">
+            <input class="link" type="submit" value="Отправить">
+          </div>
         </form>
         <button class="modal-close" type="button">Закрыть</button>
       </div>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/full_map.png" alt="Карта">
       <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
