@@ -276,7 +276,7 @@ a {
 .main-header-phone {
   position: relative;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ee3643;
   border: 3px solid #ffffff;    
   padding-left: 72px;
@@ -336,7 +336,7 @@ a {
 .registration-link a {
   font-size: 21px;
   line-height: 45px;
-  font-weight: 700;
+  font-weight: 400;
   color: black;
   position: relative;
   display: inline-block;
@@ -447,7 +447,7 @@ a {
   line-height: 26px;
   padding-left: 23px;
   margin-bottom: 22px;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
@@ -625,10 +625,11 @@ a {
 
 .slide-content h3{
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 38px;
   text-transform: uppercase;
   color: white;
+  letter-spacing: 0.75px;
   padding-top: 22px;
 }
 
@@ -941,6 +942,7 @@ a {
   padding-top: 70px;
   padding-right: 130px;
   font-size: 30px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -1107,6 +1109,7 @@ a {
   text-transform: uppercase;
   color: black;
   letter-spacing: 0.1px;
+  font-weight: 400;
 }
 
 .about p {    
@@ -1182,6 +1185,10 @@ a {
 
 .about-contacts {
   width: 300px;
+}
+
+.about-contacts h3 {
+  font-weight: 400;
 }
 
 .about-contacts p {
@@ -1396,8 +1403,9 @@ a {
   background-color: #ee3643;
 }
 
-.social ul li a:active {
+.social ul li div a:active {
   background-color: #ee3643;
+  color: transparent;
 }
 
 .developer {
@@ -2198,6 +2206,7 @@ input[type="radio"]:disabled + label {
 .login-form div label,
 .letter-form label {
   margin-bottom: 11px;
+  font-weight: 400;
 }
 
 .login-form div input {
@@ -2351,6 +2360,53 @@ input[type="radio"]:disabled + label {
   padding-right: 47px;
   padding-left: 45px;
 }
-    
 
-    
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+        
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
