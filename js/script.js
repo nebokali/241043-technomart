@@ -1,81 +1,105 @@
-var link = document.querySelector(".contacts-data .button");
-var popup = document.querySelector(".modal-feedback");
-var close = popup.querySelector(".modal-close");
-var form = popup.querySelector("form");
-var login = popup.querySelector("[name=login]");
-var email = popup.querySelector("[name=email]");
-var storage = localStorage.getItem("login");
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-show");
-  popup.classList.remove("modal-error");
-  if (storage) {
-    login.value = storage;
-    password.focus();
-  } else {
-    login.focus();
-  }
-});
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-});
-form.addEventListener("submit", function (evt) {
-  if (!login.value || !email.value) {
-  evt.preventDefault();
-  popup.classList.remove("modal-error");
-  popup.offsetWidth = popup.offsetWidth;
-  popup.classList.add("modal-error");
-  } else {
-    localStorage.setItem("login", login.value);
-  }
-});
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (popup.classList.contains("modal-show")) {
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-    }
-  }
-});
- var mapLink = document.querySelector(".contacts-button-map");
- var mapPopup = document.querySelector(".modal-map");
- var mapClose = mapPopup.querySelector(".modal-close");
- mapLink.addEventListener("click", function (evt) {
-   evt.preventDefault();
-   mapPopup.classList.add("modal-show");
- });
- mapClose.addEventListener("click", function (evt) {
-   evt.preventDefault();
-   mapPopup.classList.remove("modal-show");
- });
- window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (mapPopup.classList.contains("modal-show")) {
-      mapPopup.classList.remove("modal-show");
-    }
-  }
- });
- var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 16,
-    center: new google.maps.LatLng(59.938939, 30.323105),
-    mapTypeId: 'roadmap'
-  });
+      var link = document.querySelector(".feedback-link");
 
-  var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(59.938939, 30.323105),
-    map: map,
-    animation: google.maps.Animation.DROP,
-    title: 'Офис Nёrds design studio',
-  });
-  marker.addListener('click', toggleBounce);
- }
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-    }
-}
+      var popup = document.querySelector(".modal-feedback");
+
+      var close = popup.querySelector(".modal-close");
+
+      var form = popup.querySelector("form");
+
+      var login = popup.querySelector("[name=login]");
+
+      var email = popup.querySelector("[name=email]");
+
+      var isStorageSupport = true;
+      var storage = "";
+  
+      try {
+        storage = localStorage.getItem("login");
+      } catch (err) {
+        isStorageSupport = false;
+      }
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+
+        if (storage) {
+          login.value = storage;
+        }
+
+        login.focus();
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function (evt) {
+        if (!login.value || !email.value) {
+          evt.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+          console.log("Нужно ввести имя и e-mail");
+        } else {
+          if (isStorageSupport) {
+            localStorage.setItem("login", login.value);
+          }
+        }
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+      var mapLink = document.querySelector(".map-link");
+
+      var mapPopup = document.querySelector(".modal-map");
+
+      var mapClose = mapPopup.querySelector(".modal-close");
+        mapLink.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          mapPopup.classList.add("modal-show");
+        });
+
+        mapClose.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          mapPopup.classList.remove("modal-show");
+        });
+      
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-show")) {
+            mapPopup.classList.remove("modal-show");
+          }
+        }
+      });
+      var buyLink = document.querySelector(".buy-link");
+
+      var buyPopup = document.querySelector(".modal-cart");
+
+      var buyClose = buyPopup.querySelector(".modal-close");
+        buyLink.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          buyPopup.classList.add("modal-show");
+        });
+
+        buyClose.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          buyPopup.classList.remove("modal-show");
+        });
+      
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (buyPopup.classList.contains("modal-show")) {
+            buyPopup.classList.remove("modal-show");
+          }
+        }
+      });
+

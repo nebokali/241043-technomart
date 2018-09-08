@@ -2167,13 +2167,14 @@ input[type="radio"]:disabled + label {
   box-shadow: -2px 1px 26px 3px rgba(0,0,0,0.75);
   display: none;
   z-index: 1000;
+  margin-left: 33%;
+  margin-right: 33%;
 }
 
 .modal-feedback {
   top: 327px;
   width: 620px;
   height: 430px;
-  margin-left: 325px;
 }
 
 .feedback-top {
@@ -2271,6 +2272,8 @@ input[type="radio"]:disabled + label {
   border: 0;
   cursor: pointer;
   opacity: 0.3;
+  width: 25px;
+  height: 25px;
 }
 
 .modal-close:hover {
@@ -2304,7 +2307,6 @@ input[type="radio"]:disabled + label {
   top: 327px;
   width: 940px;
   height: 446px;
-  margin-left: 163px;
   background: url(../img/full_map.png);
   box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
@@ -2313,7 +2315,6 @@ input[type="radio"]:disabled + label {
   background-color: white;
   top: 411px;
   width: 620px;
-  margin-left: 325px;
 }
 
 .modal-cart h2 {
