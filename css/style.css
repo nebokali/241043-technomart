@@ -113,14 +113,25 @@ a {
 
 .search-form input[type="submit"] {
   position: absolute;
+  background-color: transparent;
   width: 17px;
   height: 17px;
-  background: transparent url("../img/icon-search.svg") no-repeat;
   font-size: 0;
-  opacity: 0.3;
   top: 12px;
   left: 17px;
+  z-index: 1;
+
+  cursor: pointer;
+}  
+
+.search-form svg {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  z-index: 0;
+  opacity: 0.3;
 }
+
 
 .search-form input::-moz-placeholder {
   color: #ffffff;
@@ -132,14 +143,27 @@ a {
   opacity: 1;
 }
 
-.search-form input:hover {
+.search-form input[type="search"]:hover {
   background-color: #212a3a;
   opacity: 1;
 }
 
-.search-form input:focus {
+.search-form input[type="search"]:focus {
   color: #000000;
   background-color: #ffffff;
+}
+
+.search-form:hover svg{
+  opacity: 1;
+  background-color: transparent;
+}
+
+.search-form:focus svg{
+  opacity: 1;
+}
+
+.search-form input[type="search"]:focus .search-submit {
+  fill: #ee3643;
 }
 
 .bookmark,
@@ -175,7 +199,7 @@ a {
 }
 
 .cart a  {  
-  padding-left: 24px;
+  padding-left: 50px;
   font-weight: 400;
 }
 
@@ -694,7 +718,7 @@ a {
 
 .section-top h2 {
   font-size: 30px;
-  line-height: 42px;
+  line-height: 41px;
   padding-left: 29px;
   font-weight: 400;
   text-transform: uppercase;
@@ -718,13 +742,13 @@ a {
   flex-direction: row;
   justify-content: space-between;
   padding-left: 0;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .popular ul li{
   font-family: "PT Sans", Arial, sans-serif;
   border: 1px solid #eaeaea;
-  width: 215px;
+  width: 218px;
   display:flex;
   flex-direction: column;
   justify-content: flex-end; 
@@ -754,7 +778,7 @@ a {
   line-height: 20px;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 7px;
+  padding-top: 9px;
   color: black;
   margin: 0 auto;
 }
@@ -767,9 +791,8 @@ a {
   padding: 9px 13px 10px 30px;
   margin-bottom: 20px;
   font-size: 17px;
-  line-height: 18px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 20px;
   color: white;
   background-color: #ee3643;
   border-radius: 3px;
@@ -792,7 +815,7 @@ a {
   display: inline-block;
   width: 80px;
   margin-right: 10px;
-  padding: 10px 14px 10px 30px;
+  padding: 12px 14px 10px 30px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -901,7 +924,7 @@ a {
 }
 
 .brands .section-top {
-  margin-top: 19px;
+  margin-top: 20px;
 }
 
 .brands .section-top h2 {
@@ -919,6 +942,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0;
+  margin-top: 19px;
 }
 
 .brands-list li {
@@ -947,11 +971,11 @@ a {
 .services {	
   color: black;
   background-color: #f4f8fa;
-  margin-top: 75px;
+  margin-top: 69px;
 }
 
 .services h2{
-  padding-top: 70px;
+  padding-top: 73px;
   padding-right: 130px;
   font-size: 30px;
   font-weight: 400;
@@ -1453,6 +1477,9 @@ a {
   min-width: 100px;
 }
 
+.top-menu .container .full a {
+  padding-left: 24px;
+}
 
 .user-navigation-login {
   padding: 0;

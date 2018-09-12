@@ -94,14 +94,15 @@ if (mapLink) {
     }
   }
 
-var buyLink = document.querySelector(".buy-link");
+var buyLink = document.querySelectorAll(".buy-link");
 if ("buyLink") {
 
 var buyPopup = document.querySelector(".modal-cart");
 
 var buyClose = buyPopup.querySelector(".modal-close");
-  
-    buyLink.addEventListener("click", function (evt) {
+  for(var i=0;i<buyLink.length;i++)
+
+    buyLink[i].addEventListener("click", function (evt) {
       evt.preventDefault();
       buyPopup.classList.add("modal-show");
     });
