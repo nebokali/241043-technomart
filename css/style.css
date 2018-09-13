@@ -139,11 +139,6 @@ a {
   opacity: 1;
 }
 
-.search-form input:focus {
-  color: #000000;
-  background-color: #ffffff;
-}
-
 .search-form input:focus + input {
   opacity: 1;
   background: #ffffff url("../img/icon-search-focus.png") no-repeat;
