@@ -105,7 +105,7 @@ a {
 .search-form input[type="search"] {
   padding: 12px 0;
   padding-left: 48px;
-  width: 224px;
+  width: 222px;
   height: 18px;
   background-color: #293449;
   box-sizing: content-box;
@@ -113,25 +113,15 @@ a {
 
 .search-form input[type="submit"] {
   position: absolute;
-  background-color: transparent;
-  width: 17px;
-  height: 17px;
+  background: transparent url("../img/icon-search.png") no-repeat;
+  background-position: 15px;
+  width: 45px;
+  height: 42px;
   font-size: 0;
-  top: 12px;
-  left: 17px;
-  z-index: 1;
-
+  top: 0px;
+  opacity: 0.3;
   cursor: pointer;
 }  
-
-.search-form svg {
-  position: absolute;
-  top: 12px;
-  left: 17px;
-  z-index: 0;
-  opacity: 0.3;
-}
-
 
 .search-form input::-moz-placeholder {
   color: #ffffff;
@@ -143,27 +133,21 @@ a {
   opacity: 1;
 }
 
-.search-form input[type="search"]:hover {
+.search-form input:hover,
+.search-form input:hover + input {
   background-color: #212a3a;
   opacity: 1;
 }
 
-.search-form input[type="search"]:focus {
+.search-form input:focus {
   color: #000000;
   background-color: #ffffff;
 }
 
-.search-form:hover svg{
+.search-form input:focus + input {
   opacity: 1;
-  background-color: transparent;
-}
-
-.search-form:focus svg{
-  opacity: 1;
-}
-
-.search-form input[type="search"]:focus .search-submit {
-  fill: #ee3643;
+  background: #ffffff url("../img/icon-search-focus.png") no-repeat;
+  background-position: 15px;
 }
 
 .bookmark,
