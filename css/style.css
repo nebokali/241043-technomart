@@ -1,7 +1,22 @@
+@font-face {
+  font-family: "Cuprum";
+  src: url(../fonts/Cuprum/Cuprum-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Cuprum Bold Italic";
+  src: url(../fonts/Cuprum/Cuprum-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PT_Sans/PT_Sans-Web-Regular.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
-  min-width: 960px;
+  min-width: 940px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
@@ -12,8 +27,11 @@ body {
   background-color: white;
 }
 
+a:active, 
+a:hover,  
 a {
   text-decoration: none;
+  color: black;
 }
 
 .visually-hidden {
@@ -22,7 +40,6 @@ a {
 
 
 .container {
-  padding: 0 10px;
   width: 940px;
   margin: 0 auto;
 }
@@ -80,14 +97,6 @@ a {
   padding-bottom: 8px;
 }
 
-.main-header-logo:hover {
-  background-color: #ca2c37;
-}
-
-.main-header-logo:active {
-  background-color: #ba2732;
-}
-
 .main-header-logo::after {
   width: 220px;
   height: 5px;
@@ -96,14 +105,6 @@ a {
   position: absolute;
   top: 42px;
   left: 0;
-}
-
-.main-header-logo:hover::after {
-  background-color: #9a212a;
-}
-
-.main-header-logo:active::after {
-  background-color: #8e1e26;
 }
 
 .search-form {
@@ -295,11 +296,10 @@ a {
 }
 
 .bottom-menu h1 {
-  font-style: italic;
+  font-family: "Cuprum Bold Italic", Arial, sans-serif;;
   padding-left: 52px;
   font-size: 16px;
   line-height: 23px;
-  font-weight: 700;
   color: #ee3643;
   max-width: 210px;
   letter-spacing: -0.4px;
@@ -861,8 +861,7 @@ a {
   line-height: 20px;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 16px;
-  letter-spacing: -1.4px;
+  padding-top: 15px;
   color: black;
   margin: 0 auto;
 }
@@ -1086,7 +1085,7 @@ a {
 }
 
 .services h2{
-  padding-top: 71px;
+  padding-top: 73px;
   padding-right: 130px;
   font-size: 30px;
   font-weight: 400;
@@ -1095,12 +1094,12 @@ a {
 
 .services p{
   padding-right: 130px;
-  padding-top: 9px;
+  padding-top: 10px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   max-width: 410px;
-  letter-spacing: -0.33px;
+  letter-spacing: 0.05px;
 }
 
 .slider-options,
@@ -1110,8 +1109,7 @@ a {
 
 .slider-options {
   width: 240px;
-  margin-top: 57px;
-  margin-right: 80px;
+  margin-top: 54px;
   margin-left: -40px;
   padding: 0;
   position: relative;
@@ -1156,7 +1154,7 @@ a {
 }
 
 .slider-content-item {
-  width: 650px;
+  width: 620px;
   min-height: 300px;
   overflow: hidden;
 }
@@ -1169,7 +1167,10 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-bottom: 11px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 8px;
 }
 
 .slider-content-list {
@@ -1178,6 +1179,7 @@ a {
 
 .slider-content {
   padding-top: 30px;
+  margin-left: 80px;
 }
 
 .slider-content h3 {
@@ -1185,7 +1187,8 @@ a {
   font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
-  margin-top: 34px;
+  margin-top: 32px;
+  letter-spacing: 0.4px;
 }
 
 .slider-content p {
@@ -1194,7 +1197,6 @@ a {
   line-height: 24px;
   padding: 0;
   max-width: 280px;
-  letter-spacing: -0.4px;
   margin-top: -1px;
 }
 
@@ -1265,7 +1267,6 @@ a {
   font-size: 30px;
   text-transform: uppercase;
   color: black;
-  letter-spacing: 0.1px;
   font-weight: 400;
   margin-bottom: 34px;
 }
@@ -1276,14 +1277,14 @@ a {
   max-width: 522px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-  line-height: 24px;
-  letter-spacing: -0.32px;
+  line-height: 24px;    
+  letter-spacing: 0.13px;
 }
 
 .about p:nth-child(3) {    
   max-width: 400px;
   line-height: 24px;
-  letter-spacing: -0.4px;
+  letter-spacing: 0.04px;
 }
 
 
@@ -1804,10 +1805,9 @@ a {
   display: inline-block;
 
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   color: black;
   text-transform: uppercase;
-  letter-spacing: -0.2px;
   line-height: 18px;
   color: black;
   text-transform: uppercase;
@@ -2006,7 +2006,7 @@ a {
   border-radius: 3px;
   vertical-align: top;
   margin-top: 48px;
-  letter-spacing: -0.4px;
+  letter-spacing: 0.4px;
   padding: 11px 38px;
   cursor: pointer;
 }
@@ -2038,7 +2038,6 @@ a {
   color: black;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: -1.3px;
 }
 
 .brand-filter label,
@@ -2080,7 +2079,6 @@ input[type="checkbox"] + label {
   line-height: 22px;
   position: relative;
   cursor: pointer;
-  letter-spacing: -0.9px;
 }
 
 input[type="checkbox"] + label::before {
@@ -2121,7 +2119,6 @@ input[type="radio"] + label {
   line-height: 22px;
   position: relative;
   cursor: pointer;
-  letter-spacing: -1.1px;
 }
 
 input[type="radio"] + label::before  {
@@ -2201,10 +2198,12 @@ input[type="radio"]:disabled + label {
 
 .sort-list ul li:nth-of-type(1) a{
   margin-left: 25px;
+  color: #ee3643;
+  border-bottom: none;
 }
 
 .sort-list ul li:nth-of-type(3) a{
-  margin-right: 39px;
+  margin-right: 34px;
 }
 
 .sort-list h3{
@@ -2212,14 +2211,12 @@ input[type="radio"]:disabled + label {
   font-weight: 400;
   width: 170px;
   padding-left: 20px;
-  letter-spacing: -1.0px;
 }
 
 .sort-list a {
   color: #acaaa5;
   border-bottom: 1px dotted #ee3643; 
   margin-right: 69px;
-  letter-spacing: -1px;
 }
 
 .sort-list a:hover {
@@ -2238,7 +2235,6 @@ input[type="radio"]:disabled + label {
   height: 11px;
   display: block;
   opacity: 0.2;
-  margin-left: 9px;
   margin-right: -10px;
   border-bottom: none;
 }
@@ -2268,8 +2264,8 @@ input[type="radio"]:disabled + label {
 }
 
 .sort-list li .icon-up {
-  margin-left: 13px;
-  margin-right: 10px;
+  margin-left: 9px;
+  margin-right: 21px;
   opacity: 1;
 }
 
@@ -2343,7 +2339,6 @@ input[type="radio"]:disabled + label {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 13px;
-  letter-spacing: -1.4px;
   color: black;
   margin: 0 auto;
   max-width: 190px;
@@ -2432,12 +2427,12 @@ input[type="radio"]:disabled + label {
   font-size: 13px;
   line-height: 24px;
   max-width: 940px;
-  letter-spacing: -0.41px;
+  letter-spacing: 0.03px;
   margin-bottom: 0;
 }
 
 .about-type p:nth-child(3) {
-  letter-spacing: -0.3px;
+  letter-spacing: 0.14px;
   margin-top: -8px;
 }
 
