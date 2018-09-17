@@ -611,7 +611,6 @@ a {
 
 .slider {
   width: 620px;
-  height: 266px;
   position:relative;
   padding-left: 40px;
   margin-left: -40px;
@@ -683,9 +682,8 @@ a {
 }
 
 .slide {
-  position: absolute;
   width: 620px;
-  height: 266px;
+  background-color: #4c4141;
 }
 
 .slide1 {
@@ -700,7 +698,6 @@ a {
 
 .slide-content {
   width: 520px;
-  height: 266px;
   margin-left: 25px;
   margin-top: -35px;
 }
@@ -746,6 +743,7 @@ a {
 
 .slide-content .link {
   margin-top: -7px;
+  margin-bottom: 21px;
 }
 
 .side-items {
