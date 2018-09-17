@@ -1208,7 +1208,6 @@ a {
 .slider-content-2 {
   background: transparent url("../img/guarantee-background.png") no-repeat;
   background-position: 238px 11px;
-  padding-bottom: 100px;
   padding-top: 20px;
 }
 
@@ -1223,7 +1222,6 @@ a {
 .slider-content-3 {
   background: transparent url("../img/credit-background.png") no-repeat;
   background-position: 165px -10px;
-  padding-bottom: 100px;
 }
 
 #slider-content-1:checked ~ .slider-options label[for="slider-content-1"],
