@@ -4,13 +4,72 @@
 }
 
 @font-face {
-  font-family: "Cuprum Bold Italic";
+  font-family: "Cuprum";
+  src: url(../fonts/Cuprum/Cuprum-Bold.ttf);
+  font-style: bold;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cuprum";
   src: url(../fonts/Cuprum/Cuprum-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url(../fonts/Cuprum/Cuprum-Italic.ttf);
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url(../fonts/Cuprum/cuprum.woff2);
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url(../fonts/Cuprum/cuprumbold.woff2);
+  font-style: bold;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url(../fonts/Cuprum/cuprumitalic.woff2);
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url(../fonts/Cuprum/cuprumbolditalic.woff2);
+  font-style: italic;
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "PT Sans";
   src: url(../fonts/PT_Sans/PT_Sans-Web-Regular.ttf);
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PT_Sans/PT_Sans-Web-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PT_Sans/ptsans.woff2);
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PT_Sans/ptsansbold.woff2);
+  font-weight: 700;
 }
 
 body {
@@ -296,7 +355,8 @@ a {
 }
 
 .bottom-menu h1 {
-  font-family: "Cuprum Bold Italic", Arial, sans-serif;;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: italic;
   padding-left: 52px;
   font-size: 16px;
   line-height: 23px;
@@ -351,7 +411,6 @@ a {
   color: #3f4e66;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 0.2px;
 }
 
 .user-navigation {
@@ -522,7 +581,6 @@ a {
   padding-left: 23px;
   margin-bottom: 22px;
   font-weight: 700;
-  letter-spacing: 1px;
 }
 
 .item a {
@@ -600,7 +658,6 @@ a {
   padding-left: 23px;
   padding-top: 23px;
   margin-bottom: 20px;
-  letter-spacing: 0.8px;
 }
 
 .delivery {
@@ -2069,7 +2126,7 @@ a {
 }
 
 input[type="checkbox"] {
-  visibility: hidden;
+  opacity:0;
 }
 
 input[type="checkbox"] + label {
@@ -2100,6 +2157,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 input[type="checkbox"] + label:hover,
+input[type="checkbox"]:checked + label:hover::before,
 input[type="checkbox"] + label:hover::before {
   opacity: 1;
 }
@@ -2108,8 +2166,15 @@ input[type="checkbox"]:disabled + label {
   opacity: 0.3;
 }
 
-input[type="radio"] {
-  visibility: hidden;
+.brand-filter label:active{
+  opacity: 1;
+  outline: auto;
+}
+  
+input[type="checkbox"] + label:focus,
+input[type="checkbox"]:checked + label:focus::before,
+input[type="checkbox"] + label:focus::before  {
+  opacity:0;
 }
 
 input[type="radio"] + label {
@@ -2147,6 +2212,13 @@ input[type="radio"] + label:hover::before {
 
 input[type="radio"]:disabled + label {
   opacity: 0.3;
+}
+
+input[type="radio"] label:focus,
+input[type="radio"]:checked + label:focus::before,
+input[type="radio"] + label:focus::before {
+  outline: auto;
+  opacity: 1;
 }
 
 .sort {
