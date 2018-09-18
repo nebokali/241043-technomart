@@ -2166,14 +2166,12 @@ input[type="checkbox"]:disabled + label {
   opacity: 0.3;
 }
 
-.brand-filter label:active{
+input[type="checkbox"]:focus + label {
   opacity: 1;
-  outline: auto;
+  outline: 1px solid #a5d1f2;
 }
   
-input[type="checkbox"] + label:focus,
-input[type="checkbox"]:checked + label:focus::before,
-input[type="checkbox"] + label:focus::before  {
+input[type="radio"] {
   opacity:0;
 }
 
@@ -2214,12 +2212,11 @@ input[type="radio"]:disabled + label {
   opacity: 0.3;
 }
 
-input[type="radio"] label:focus,
-input[type="radio"]:checked + label:focus::before,
-input[type="radio"] + label:focus::before {
-  outline: auto;
+input[type="radio"]:focus + label {
   opacity: 1;
+  outline: 1px solid #a5d1f2;
 }
+  
 
 .sort {
   width: 700px;
