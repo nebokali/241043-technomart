@@ -166,6 +166,22 @@ a {
   left: 0;
 }
 
+.catalog-header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.catalog-header-logo:active {
+  background-color: #ba2732;
+}
+
+.catalog-header-logo:hover::after {
+  background-color: #9a212a;
+}
+
+.catalog-header-logo:active::after {
+  background-color: #8e1e26;
+}
+
 .search-form {
   width: 270px;
   position: relative;
